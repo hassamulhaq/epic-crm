@@ -18,6 +18,10 @@
         "lodash": "^4.17.19",
         "postcss": "^8.4.6",
         "postcss-import": "^14.0.2",
+<<<<<<< HEAD
         "tailwindcss": "^3.0.18",
+=======
+        "tailwindcss": "^3.0.18"
+>>>>>>> 9aca02e08ba257e9763f1732cd5b658cc44ae564
     }
 }
