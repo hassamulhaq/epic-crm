@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/define-CRM.iml" filepath="$PROJECT_DIR$/.idea/define-CRM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Epic-CRM.iml" filepath="$PROJECT_DIR$/.idea/Epic-CRM.iml" />
     </modules>
   </component>
 </project>
