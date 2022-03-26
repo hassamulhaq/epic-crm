@@ -15,7 +15,11 @@
         "laravel/tinker": "^2.7"
     },
     "require-dev": {
+<<<<<<< HEAD
         "barryvdh/laravel-ide-helper": "^2.12",
+=======
+        "barryvdh/laravel-debugbar": "^3.6",
+>>>>>>> bbbcc5bf5b8ffd336756fd0c86252607f921de1d
         "fakerphp/faker": "^1.9.1",
         "laravel/breeze": "^1.8",
         "laravel/sail": "^1.0.1",
