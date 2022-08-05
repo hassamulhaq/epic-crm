@@ -1,3 +1,4 @@
+{{-- https://github.com/hassamulhaq/epic-crm @devhassam --}}
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
