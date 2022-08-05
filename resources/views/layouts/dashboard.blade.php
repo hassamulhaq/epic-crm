@@ -24,7 +24,7 @@
 <div class="flex ss la">
 
     <!-- Sidebar -->
-    @include('layouts/sidebar/sidebar')
+    @include('layouts/_partials/sidebar/sidebar')
 
     <!-- Content area -->
     <div class="y flex ak ug ll lc">

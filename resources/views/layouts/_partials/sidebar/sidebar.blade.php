@@ -56,7 +56,7 @@
                 </h3>
                 <ul class="nk">
                     <!-- Dashboard -->
-                    @include('layouts/sidebar/_partials/menu-items/item')
+                    @include('layouts/_partials/sidebar/menu-items/item')
                 </ul>
             </div>
 
