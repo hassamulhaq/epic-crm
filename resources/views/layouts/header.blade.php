@@ -280,7 +280,7 @@
                         <img class="os sf rounded-full" src="{{ asset('/images/ui/user-avatar-32.png') }}" width="32" height="32"
                              alt="User">
                         <div class="flex items-center ld">
-                            <span class="ld nq text-sm gp kz">Acme Inc.</span>
+                            <span class="ld nq text-sm gp kz">{{ Auth::user()->name }}</span>
                             <svg class="w-3 h-3 ub nz du gq" viewBox="0 0 12 12">
                                 <path d="M5.9 11.4L.5 6l1.4-1.4 4 4 4-4L11.3 6z"></path>
                             </svg>
@@ -292,8 +292,8 @@
                          x-transition:enter-end="ba uj" x-transition:leave="wt wa wr"
                          x-transition:leave-start="ba" x-transition:leave-end="opacity-0" x-cloak="">
                         <div class="mu ms vn rt cs border-slate-200">
-                            <div class="gp text-slate-800">Acme Inc.</div>
-                            <div class="go text-slate-500 gm">Administrator</div>
+                            <div class="gp text-slate-800">{{ Auth::user()->name }}</div>
+                            <div class="go text-slate-500 gm">{{ Auth::user()->email }}</div>
                         </div>
                         <ul>
                             <li>
@@ -302,9 +302,16 @@
                                    @focusout="open = false">Settings</a>
                             </li>
                             <li>
-                                <a class="gp text-sm text-indigo-500 xh flex items-center vf vn"
-                                   href="signin.html" @click="open = false" @focus="open = true"
-                                   @focusout="open = false">Sign Out</a>
+                            <!-- Authentication -->
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+
+                                <x-dropdown-link :href="route('logout')" class="gp text-sm text-indigo-500 xh flex items-center vf vn"
+                                                 onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                                    {{ __('Log Out') }}
+                                </x-dropdown-link>
+                            </form>
                             </li>
                         </ul>
                     </div>
