@@ -23,7 +23,8 @@
 <!-- Page wrapper -->
 <div class="flex ss la">
 
-
+    <!-- Sidebar -->
+    @include('layouts/sidebar/sidebar')
 
     <!-- Content area -->
     <div class="y flex ak ug ll lc">
@@ -550,6 +551,160 @@
 
                 <!-- Cards -->
                 <div class="sn ag fn">
+
+                    <!-- Line chart (Analytics) -->
+                    <div class="flex ak tz tni bg-white bd rounded-sm border border-slate-200">
+                        <header class="vc vu cs ch flex items-center">
+                            <h2 class="gh text-slate-800">Analytics</h2>
+                        </header>
+                        <div class="vc vf">
+                            <div class="flex flex-wrap">
+                                <!-- Unique Visitors -->
+                                <div class="flex items-center vr">
+                                    <div class="rp">
+                                        <div class="flex items-center">
+                                            <div class="text-3xl font-bold text-slate-800 mr-2">24.7K</div>
+                                            <div class="text-sm gp yt">+49%</div>
+                                        </div>
+                                        <div class="text-sm text-slate-500">Unique Visitors</div>
+                                    </div>
+                                    <div class="hidden qx of sf hu rp" aria-hidden="true"></div>
+                                </div>
+                                <!-- Total Pageviews -->
+                                <div class="flex items-center vr">
+                                    <div class="rp">
+                                        <div class="flex items-center">
+                                            <div class="text-3xl font-bold text-slate-800 mr-2">56.9K</div>
+                                            <div class="text-sm gp yt">+7%</div>
+                                        </div>
+                                        <div class="text-sm text-slate-500">Total Pageviews</div>
+                                    </div>
+                                    <div class="hidden qx of sf hu rp" aria-hidden="true"></div>
+                                </div>
+                                <!-- Bounce Rate -->
+                                <div class="flex items-center vr">
+                                    <div class="rp">
+                                        <div class="flex items-center">
+                                            <div class="text-3xl font-bold text-slate-800 mr-2">54%</div>
+                                            <div class="text-sm gp yn">-7%</div>
+                                        </div>
+                                        <div class="text-sm text-slate-500">Bounce Rate</div>
+                                    </div>
+                                    <div class="hidden qx of sf hu rp" aria-hidden="true"></div>
+                                </div>
+                                <!-- Visit Duration-->
+                                <div class="flex items-center">
+                                    <div>
+                                        <div class="flex items-center">
+                                            <div class="text-3xl font-bold text-slate-800 mr-2">2m 56s</div>
+                                            <div class="text-sm gp yn">+7%</div>
+                                        </div>
+                                        <div class="text-sm text-slate-500">Visit Duration</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Chart built with Chart.js 3 -->
+                        <!-- Check out src/js/components/analytics-card-01.js for config -->
+                        <div class="uw">
+                            <!-- Change the height attribute to adjust the chart height -->
+                            <canvas id="analytics-card-01" width="971" height="315" style="display: block; box-sizing: border-box; height: 315px; width: 971px;"></canvas>
+                        </div>
+                    </div>
+
+                    <!--  Line chart (Active Users Right Now) -->
+                    <div class="flex ak tz tns bg-white bd rounded-sm border border-slate-200">
+                        <header class="vc vu cs ch">
+                            <h2 class="gh text-slate-800">Active Users Right Now</h2>
+                        </header>
+                        <!-- Card content -->
+                        <div class="flex ak sh">
+                            <!-- Live visitors number -->
+                            <div class="vc vo">
+                                <div class="flex items-center">
+                                    <!-- Red dot -->
+                                    <div class="y flex items-center justify-center oo sl rounded-full hf ra" aria-hidden="true">
+                                        <div class="g oc sp rounded-full ha"></div>
+                                    </div>
+                                    <!-- Vistors number -->
+                                    <div>
+                                        <div class="text-3xl font-bold text-slate-800 mr-2">347</div>
+                                        <div class="text-sm text-slate-500">Live visitors</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chart built with Chart.js 3 -->
+                            <!-- Check out src/js/components/analytics-card-02.js for config -->
+                            <div>
+                                <!-- Change the height attribute to adjust the chart height -->
+                                <canvas id="analytics-card-02" width="472" height="70" style="display: block; box-sizing: border-box; height: 70px; width: 472px;"></canvas>
+                            </div>
+
+                            <!-- Table -->
+                            <div class="uw vc mt mf">
+                                <div class="lf">
+                                    <table class="ux ou">
+                                        <!-- Table header -->
+                                        <thead class="go gv gq">
+                                        <tr>
+                                            <th class="vr">
+                                                <div class="gh gt">Top pages</div>
+                                            </th>
+                                            <th class="vr">
+                                                <div class="gh gr">Active users</div>
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <!-- Table body -->
+                                        <tbody class="text-sm le ln">
+                                        <!-- Row -->
+                                        <tr>
+                                            <td class="vr">
+                                                <div class="gt">preview.cruip.com/open-pro/</div>
+                                            </td>
+                                            <td class="vr">
+                                                <div class="gp gr text-slate-800">94</div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row -->
+                                        <tr>
+                                            <td class="vr">
+                                                <div class="gt">preview.cruip.com/simple/</div>
+                                            </td>
+                                            <td class="vr">
+                                                <div class="gp gr text-slate-800">42</div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row -->
+                                        <tr>
+                                            <td class="vr">
+                                                <div class="gt">cruip.com/unlimited/</div>
+                                            </td>
+                                            <td class="vr">
+                                                <div class="gp gr text-slate-800">12</div>
+                                            </td>
+                                        </tr>
+                                        <!-- Row -->
+                                        <tr>
+                                            <td class="vr">
+                                                <div class="gt">preview.cruip.com/twist/</div>
+                                            </td>
+                                            <td class="vr">
+                                                <div class="gp gr text-slate-800">4</div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Card footer -->
+                            <div class="gr vc ml">
+                                <a class="text-sm gp text-indigo-500 xh" href="#0">Real-Time Report -&gt;</a>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Line chart (Acme Plus) -->
                     <div class="flex ak tz _c tns bg-white bd rounded-sm border border-slate-200">

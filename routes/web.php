@@ -22,13 +22,15 @@ Route::get('/', function () {
 
 Route::get('/old/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['auth'])->name('old.dashboard');
+Route::get('/dashboard/', [DashboardController::class, 'index'])
+    ->middleware(['auth'])
+    ->name('dashboard');
 
 
 Route::get('/admin/users', [UserController::class, 'index'])->name('admin.users');
 
 Route::get('/dashboard-preview/', [DashboardController::class, 'preview'])->name('previewdashboard');
-Route::get('/dashboard/', [DashboardController::class, 'index'])->middleware(['auth'])->name('newdashboard');
 
 
 require __DIR__.'/auth.php';

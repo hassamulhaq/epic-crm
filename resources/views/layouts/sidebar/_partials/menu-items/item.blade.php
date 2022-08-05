@@ -26,18 +26,8 @@
     <div class="tex ttj 2xl:block">
         <ul class="me re" :class="open ? '!block' : 'hidden'">
             <li class="rt ww">
-                <a class="block text-indigo-500 wt wi ld" href="index-2.html">
+                <a class="block text-indigo-500 wt wi ld" href="{{ route('dashboard') }}">
                     <span class="text-sm gp ttw tnn 2xl:opacity--100 wr">Main</span>
-                </a>
-            </li>
-            <li class="rt ww">
-                <a class="block gq hover--text-slate-200 wt wi ld" href="analytics.html">
-                    <span class="text-sm gp ttw tnn 2xl:opacity--100 wr">Analytics</span>
-                </a>
-            </li>
-            <li class="rt ww">
-                <a class="block gq hover--text-slate-200 wt wi ld" href="fintech.html">
-                    <span class="text-sm gp ttw tnn 2xl:opacity--100 wr">Fintech</span>
                 </a>
             </li>
         </ul>
