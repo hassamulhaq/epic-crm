@@ -12,10 +12,22 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        <link href="{{ asset('/css/ui/login.css') }}" rel="stylesheet">
     </head>
-    <body>
+    <body class="gs bs hi g_">
+        <script>
+            if (localStorage.getItem('sidebar-expanded') == 'true') {
+                document.querySelector('body').classList.add('sidebar-expanded');
+            } else {
+                document.querySelector('body').classList.remove('sidebar-expanded');
+            }
+        </script>
+
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
+
+        <script src="{{ asset('/js/ui/vendors/alpinejs.min.js') }}" defer=""></script>
     </body>
 </html>
